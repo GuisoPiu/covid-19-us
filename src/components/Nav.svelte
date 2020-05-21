@@ -24,7 +24,7 @@
     <span class="navbar-burger" class:is-active={isOpen} on:click={toggleNav} aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
+	  <span aria-hidden="true"></span>
     </span>
   </div>
   <div class="navbar-menu" class:is-active={isOpen}>
