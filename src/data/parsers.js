@@ -9,7 +9,7 @@ function usStats(data) {
         deaths: format.number(usStatRaw.death),
         recovered: format.number(usStatRaw.recovered),
         ventilators: format.number(usStatRaw.onVentilatorCurrently),
-        hospitalized: format.number(usStatRaw.hospitalized),
+        hospitalized: format.number(usStatRaw.hospitalizedCurrently),
         icu: format.number(usStatRaw.inIcuCurrently),
         tested: format.number(usStatRaw.totalTestResults),
         updated: moment(usStatRaw.lastModified).format('LLLL'),
