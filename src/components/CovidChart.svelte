@@ -34,7 +34,7 @@
             },
             options: {
                 responsive: true,
-                tooltip: {
+                tooltips: {
                     callbacks: {
                         label: function(tooltipItem, data) {
                             let label = data.datasets[tooltipItem.datasetIndex].
