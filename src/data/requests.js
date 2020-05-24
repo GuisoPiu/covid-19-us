@@ -7,6 +7,12 @@ async function usStats() {
     return parsers.usStats(response.data)
 };
 
+async function statesData() {
+    const response = await axios.get('https://covidtracking.com/api/v1/states/daily.json');
+
+    return parsers.stateTable(response.data);
+}
+
 async function stateStats(state) {
     const response = await axios.get('https://covidtracking.com/api/v1/states/info.json');    
 
@@ -30,4 +36,5 @@ export default {
     stateStats,
     historicUs,
     historicState,
+    statesData,
 };

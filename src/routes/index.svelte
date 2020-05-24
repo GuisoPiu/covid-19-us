@@ -5,8 +5,9 @@ import requests from '../data/requests.js';
         try {            
             const usStats = await requests.usStats();
             const historic = await requests.historicUs();
+            const statesData = await requests.statesData();
             
-            return {usStats, historic};
+            return {usStats, historic, statesData };
         } catch(e) {
             console.log(e);
             this.error(500, 
@@ -24,7 +25,9 @@ import requests from '../data/requests.js';
 
     export let usStats;
     export let historic;
-    console.log(historic);
+    export let statesData;
+
+    console.log(statesData, "..statesData");
     
 </script>
 
@@ -42,4 +45,4 @@ import requests from '../data/requests.js';
 
 <CovidChart historicData={historic} title="US Covid-19" />
 
-<TableContainer />
+<TableContainer data={statesData} />
