@@ -17,7 +17,7 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/">
+    <a rel="prefetch" class="navbar-item" href="/">
       <img src="logo.png" alt="virus" >
     </a>
 
@@ -29,8 +29,8 @@
   </div>
   <div class="navbar-menu" class:is-active={isOpen}>
     <div class="navbar-start">
-		<a href="/" class="navbar-item" class:is-active={segment === undefined}>Home</a>
-		<a href="/about" class="navbar-item" class:is-active={segment === 'about'}>About</a>
+		<a rel="prefetch"  href="/" class="navbar-item" class:is-active={segment === undefined}>Home</a>
+		<a rel="prefetch" href="/about" class="navbar-item" class:is-active={segment === 'about'}>About</a>
 
 	</div>
   </div>
