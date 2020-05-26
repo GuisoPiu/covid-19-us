@@ -21,14 +21,15 @@
                 <th>State</th>
                 <th>Cases</th>
                 <th>Deaths</th>
-                <th>Totoal Tested</th>
+                <th>Total Tested</th>
             </tr>
         </thead>
         <tbody>
-            {#each states as state (state.state)}
+            <!-- {#each states as state (state.state) } -->
+            {#each states as state } 
                 <tr>
                     <td>
-                        <a href="{state.state}">
+                        <a href={state.state}>
                             {state.fullStateName}
                         </a>
                     </td>

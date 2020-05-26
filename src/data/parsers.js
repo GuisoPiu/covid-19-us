@@ -22,7 +22,7 @@ function stateTable(stateData){
             cases: format.number(data.positive),
             deaths: format.number(data.death),
             tested: format.number(data.totalTestResults),
-            state: data.state,
+            state: format.number(data.state),
             fullStateName: name,
         };
     });

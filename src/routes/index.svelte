@@ -9,7 +9,6 @@ import requests from '../data/requests.js';
             
             return {usStats, historic, statesData };
         } catch(e) {
-            console.log(e);
             this.error(500, 
             "There was an error in calling the API, please try again in 5 minutes"
             );
@@ -27,7 +26,6 @@ import requests from '../data/requests.js';
     export let historic;
     export let statesData;
 
-    console.log(statesData, "..statesData");
     
 </script>
 
