@@ -29,7 +29,7 @@
             {#each states as state } 
                 <tr>
                     <td>
-                        <a href={state.state}>
+                        <a rel="prefetch" href={state.state}>
                             {state.fullStateName}
                         </a>
                     </td>

@@ -29,7 +29,5 @@
     }
 </script>
 
-<h1>{stateName} / {sortBy}  </h1>
-
 <TableFilter bind:sortBy bind:stateName />
 <Table {states} />

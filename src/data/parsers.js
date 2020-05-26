@@ -38,7 +38,7 @@ function parseStats(rawStats) {
         hospitalized: format.number(rawStats.hospitalizedCurrently),
         icu: format.number(rawStats.inIcuCurrently),
         tested: format.number(rawStats.totalTestResults),
-        updated: moment(rawStats.lastModified).format('LLLL'),
+        updated: moment(rawStats.lastModified).format('LT'),
     }
 }
 
